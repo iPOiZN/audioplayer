@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player by POiZN v2.1</title>
+    <!-- <link rel="icon" href="img/favicon.jpeg"> -->
+    <link rel="stylesheet" href="files/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/empty.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <header class="header">
+    <img src="img/bg-1.jpeg" alt="" class="bg">
+    <img src="img/bg-2.jpeg" alt="" class="bg">
+    <img src="img/bg-3.jpeg" alt="" class="bg">
+    <img src="img/bg-4.jpeg" alt="" class="bg">
+    <img src="img/bg-5.jpeg" alt="" class="bg">
+    <div class="player">
+        <div class="player__open">
+            <p class="player__open-text">Open your songs</p>
+            <i class="fas fa-arrow-alt-left"></i>
+        </div>
+        <input class="open" id="open" type="file" multiple="multiple" accept=".mp3, .flac">
+        <!-- <label for="open"><i id="open__icon" class="fal fa-user-music"></i></label> -->
+        <label for="open"><i class="fas fa-user-music" id="open__icon"></i></label>
+
+
+        <audio src="" class="audio"></audio>
+
+        <img src="img/empty.png" alt="" class="album">
+        <input class="time__range" type="range" name="" id="" value="0">
+        <div class="time">
+            <p class="start__time">--:--</p>
+            <p class="end__time">--:--</p>
+        </div>
+        <div class="song">
+            <h2 class="track"></h2>
+            <!-- <p class="artist"></p> -->
+        </div>
+        <div class="controls">
+            <i class="playlist__show fal fa-list-music"></i>
+            <i class="fad fa-lightbulb" id="light"></i>
+            <button href="" class="repeat"><i class="far fa-repeat"></i></button>
+            <div class="main">
+                <button href="" class="prev"><i class="fal fa-step-backward"></i></button>
+                <button href="" class="play"><i class="fal fa-play"></i></button>
+                <button href="" class="next"><i class="fal fa-step-forward"></i></button>
+            </div>
+            <button href="" class="shuffle"><i class="far fa-random"></i></button>
+            <div class="volume">
+                <i id="min" class="fal fa-volume-down"></i>
+                <input class="volume__range" type="range">
+                <i id="max" class="fal fa-volume-up"></i>
+            </div>
+        </div>
+        <ul class="playlist">
+        </ul>
+    </div>
+</header>
+
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
